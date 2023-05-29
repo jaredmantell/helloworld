@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "keybrborder",
+    "version": "1.0",
+    "description": "Adds a red border to all webpages on keybr.com",
+    "icons": 
+          {
+          "48": "icons/src48x48.png"
+          },
+    "content_scripts": 
+          [
+              {
+              "matches": ["*://*.keybr.com/*"],
+              "js": ["srcborder.js"]
+              }
+          ]
+  }
